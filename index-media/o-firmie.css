@@ -1,0 +1,239 @@
+.o-firmie
+{
+    width: 100%;
+    height: auto;
+    padding-top: 200px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.left, .right
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.left
+{
+    width: 45%;
+    height: auto;
+}
+
+.right
+{
+    width: 40%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 5%
+}
+
+.pasek-zdj
+{
+    width: 70%;
+    height: 12%;
+    border-left: solid 5px red;
+    font-size: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgb(0, 0, 0,0.1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.tytul
+{
+    font-size: 65px;
+}
+
+.tresc
+{
+    font-size: 28px;
+}
+
+.z1
+{
+    width: 90%;
+}
+
+
+.l1
+{
+    width: 100%;
+}
+
+
+
+@media (max-width: 1200px) {
+    .tresc
+{
+    font-size: 22px;
+}
+.pasek-zdj
+{
+    font-size: 24px;
+}
+
+}
+
+
+
+@media (max-width: 950px) {
+    .tresc
+    {
+    font-size: 20px;
+    }
+
+    .pasek-zdj
+{
+    font-size: 22px;
+}
+
+
+.tytul
+{
+    font-size: 55px;
+}
+}
+
+
+
+@media (max-width: 800px) {
+    .o-firmie
+{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+
+.z1
+{
+    display: none;
+}
+
+.tytul
+{
+    font-size: 70px;
+}
+
+.right
+{
+    width: 80%;
+}
+
+.left
+{
+    width: 80%;
+}
+}
+
+
+
+@media (max-width: 550px) {
+
+
+.tytul
+{
+    font-size: 60px;
+}
+
+.tresc
+{
+    font-size: 20px;
+}
+
+.right
+{
+    width: 80%;
+}
+
+.left
+{
+    width: 80%;
+}
+
+.pasek-zdj
+{
+    font-size: 16px;
+}
+
+
+}
+
+
+
+
+@media (max-width: 550px) {
+
+
+    .tytul
+    {
+        font-size: 50px;
+    }
+    
+    .tresc
+    {
+        font-size: 16px;
+    }
+    
+    .right
+    {
+        width: 80%;
+    }
+    
+    .left
+    {
+        width: 80%;
+    }
+    
+    .pasek-zdj
+    {
+        font-size: 14px;
+    }
+    
+    
+    }
+
+
+
+    @media (max-width: 400px) {
+
+
+        .tytul
+        {
+            font-size: 40px;
+        }
+        
+        .tresc
+        {
+            font-size: 14px;
+        }
+        
+        .right
+        {
+            width: 80%;
+        }
+        
+        .left
+        {
+            width: 90%;
+        }
+        
+        .pasek-zdj
+        {
+            font-size: 14px;
+        }
+        
+        
+        }

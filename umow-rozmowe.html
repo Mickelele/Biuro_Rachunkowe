@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+
+    <head>
+        <title>Biuro SORIM</title>
+        <link rel="icon" href="media/b.png" type="image/png">
+
+        <script src="scripts/header.js" defer></script>
+
+        <link rel="stylesheet" href="index-media/header-computer.css">
+        <link rel="stylesheet" href="index-media/phone-header.css">
+        <link rel="stylesheet" href="index-media/footer.css">
+        <link rel="stylesheet" href="oferta-media/oferta-strona.css">
+        <link rel="stylesheet" href="index-media/general.css">
+        <link rel="stylesheet" href="oferta-media/calculator.css">
+        <link rel="stylesheet" href="umow-rozmowe/umow-rozmowe.css">
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+
+        <meta property="og:title" content="Biuro rachunkowe Małgorzata Wańtusiak" />
+        <meta property="og:description" content="Biuro rachunkowe Małgorzata Wańtusiak" />
+        <meta property="og:image" content="/media/b.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+    </head>
+
+    <body>
+
+
+        <div class="computer-header" id="computerHeader">
+
+            <div class="computer-header-left">
+                <a href="index.html">
+                    <img class="logo" src="media/logo.png" alt="media/logo.png">
+                </a>
+            </div>
+        
+            <div class="computer-header-right">
+                <a class="menu-item" href="index.html">HOME</a>
+                <a class="menu-item" href="oferta.html">OFERTA</a>
+                <a class="menu-item" href="o-nas.html">O NAS</a>
+                <a class="menu-item" href="kontakt.html">KONTAKT</a>
+                <button class="button" onclick="window.location.href='umow-rozmowe.html'">UMÓW ROZMOWĘ</button>
+            </div>
+        </div>
+        
+        
+        
+        <div class="phone-header" id="phoneHeader">
+            <div class="phone-header-top">
+                <a href="index.html">
+                    <img class="logo" src="media/logo.png" alt="media/logo.png">
+                </a>
+            </div>
+            
+            <div class="phone-header-bottom">
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </div>
+            
+            <div class="menu hidden" id="menu">
+                <a class="menu-item" href="index.html">HOME</a>
+                <a class="menu-item" href="oferta.html">OFERTA</a>
+                <a class="menu-item" href="o-nas.html">O NAS</a>
+                <a class="menu-item" href="kontakt.html">KONTAKT</a>
+                <button class="button" onclick="window.location.href='umow-rozmowe.html'">UMÓW ROZMOWĘ</button>
+            </div>
+        </div>
+
+
+
+
+       
+        <div class="umow-rozmowe-strona">
+
+
+            <div class="strona-gora">
+                <p class="strona-gora-a">
+                    JAK TO ZROBIĆ?
+                </p>
+
+                <p class="strona-gora-b">
+                    Wybierz nasze biuro rachunkowe - to łatwe!
+                </p>
+            </div>
+
+
+            <div class="strona-dol">
+
+                <div class="strona-dol-lewo">
+                    <div class="dol-lewo-trim">
+                        <img class="strzalka" src="media/strzalka.png" alt="strzalka.png">
+
+                        <div class="strona-dol-lewo-div">
+                            <p class="strona-dol-lewo-div-tytul"><span style="color: red;">1 .</span> Umów rozmowę</p>
+                            <p class="strona-dol-lewo-div-opis">Wypełnij i wyślij formularz, a nasz specjalista skontaktuje się z Tobą.</p>
+                        </div>
+    
+    
+                        <div class="strona-dol-lewo-div">
+                            <p class="strona-dol-lewo-div-tytul"><span style="color: red;">2 .</span> Wspólnie ustalimy szczegóły współpracy</p>
+                            <p class="strona-dol-lewo-div-opis">Odpowiemy na wszystkie Twoje pytania i przedstawimy pomysł na księgowość dla Twojej firmy</p>
+                        </div>
+
+                        <div class="strona-dol-lewo-div">
+                            <p class="strona-dol-lewo-div-tytul"><span style="color: red;">3 .</span> Rozpoczęcie współpracy</p>
+                            <p class="strona-dol-lewo-div-opis">Podpiszemy umowę i rozpoczniemy skuteczną współpracę.</p>
+                        </div>
+    
+                        
+
+                    </div>
+                    
+
+
+                </div>
+
+
+
+
+                <div class="strona-dol-prawo">
+
+                    <form class="formularz2" action="#">
+
+                        <div class="formularz2-input-div">
+                            <label class="formularz2-label" for="imieNazwisko">Imię i Nazwisko</label>
+                            <input class="formularz2-input" type="text" placeholder="np. Adam Nowak" id="form2-imieNazwisko">
+                        </div>
+                        
+
+
+                        <div class="formularz2-input-div">
+                            <label class="formularz2-label" for="imieNazwisko">Adres email</label>
+                            <input class="formularz2-input" type="text" placeholder="np. imie@email.com" id="form2-email">
+                        </div>
+
+
+                        <div class="formularz2-input-div">
+                            <label class="formularz2-label" for="imieNazwisko">Numer telefonu</label>
+                            <input class="formularz2-input" type="text" placeholder="np. +48 123 123 123" id="form2-telefon">
+                        </div>
+
+                        <div class="checkbox-wrapper">
+                            <input class="checkbox" type="checkbox" id="accept">
+                            <label class="checkboxOpis" for="accept">Akceptuję regulamin oraz politykę prywatności i tym samym wyrażam zgodę na przetwarzanie przez Administrację moich danych osobowych.</label>
+                        </div>
+
+                        <button class="formularz2-button" type="submit">UMÓW ROZMOWĘ</button>
+                        
+                    </form>
+
+
+
+                    <div class="n">
+                        <p class="lub-zadzwon">lub zadzwoń</p>
+                        <a class="form2-tel" href="tel:881011040">881 011 040</a>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <div class="footer">
+
+            <div class="left-footer">
+
+                <div class="left-footer-top">
+                    <img class="l2" src="media/logo.png" alt="logo.png">
+                </div>
+
+                <div class="left-footer-bottom">
+
+
+                    <div class="wrapper-contener">
+
+                        <div class="footer-text-div">
+                            <i class="fa-solid fa-phone footer-icon"></i>
+                            <a class="footer-text" href="tel:881011040">
+                                881 011 040
+                            </a>
+                        </div>
+
+
+                        <div class="footer-text-div">
+                            <i class="fa-solid fa-inbox footer-icon"></i>
+                            <p class="footer-text">
+                                biuro.sorim@wp.pl
+                            </p>
+                        </div>
+
+
+                        <div class="footer-text-div">
+                            <i class="fa-solid fa-location-dot footer-icon"></i>
+                            <p class="footer-text">
+                                Piękna 2, Sokołow Podlaski
+                            </p>
+                        </div>
+
+                    </div>
+
+                    
+                    
+
+                    
+
+                </div>
+                
+            </div>
+
+            <div class="right-footer">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.9846136044193!2d22.251723212743727!3d52.406955071915235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471f6fdffd191fbb%3A0x6c97ad9835951a6!2sBiuro%20Rachunkowe%20Sorim%20Ma%C5%82gorzata%20Wa%C5%84tusiak!5e0!3m2!1spl!2spl!4v1732643583405!5m2!1spl!2spl"
+                 width="700"
+                  height="400"
+                   style="border:0;"
+                    allowfullscreen=""
+                     loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+        </div>
+        
+
+        
+    </body>

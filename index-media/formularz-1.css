@@ -1,0 +1,255 @@
+.formularz-1
+{
+    background-image: url('../media/cyferki.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 900px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.frame
+{
+    width: 50%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row; 
+}
+
+
+
+.left-frame
+{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 250px;
+    color: rgb(250, 74, 74);
+}
+
+
+.right-frame
+{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.checkbox {
+    margin-left: 0;
+    transform: scale(1.2);
+}
+
+.checkboxOpis {
+    font-size: 12px;
+    font-family: 'Libre Baskerville', serif;
+    color: black;
+    line-height: 1.5;
+    max-width: 60%;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+
+
+.form1
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.f1m
+{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 45px;
+}
+
+
+.f1i {
+    width: 80%;
+    padding-right: 30px; 
+    padding-left: 35px; 
+    font-size: 16px;
+    height: 40px; 
+    box-sizing: border-box; 
+    border-radius: 30px;
+    border: solid 2px grey;
+}
+
+
+
+.f1o {
+    width: 80%;
+    padding-top: 15px; 
+    padding-left: 15px; 
+    font-size: 16px;
+    height: 200px;
+    box-sizing: border-box; 
+    border-radius: 30px;
+    border: solid 2px grey;
+    resize: vertical; 
+    overflow: auto; 
+}
+
+.f1o:focus {
+    outline: none;
+    border-color: #66afe9;
+}
+
+
+
+.f1i:focus {
+    outline: none;
+}
+
+.ikonaFormularz1 {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: black;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%; 
+}
+
+.sendButton
+{
+    width: 180px;
+    height: 40px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(250, 74, 74);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1600px) {
+    
+    .frame
+    {
+        width: 60%;
+    }
+
+
+}
+
+
+@media (max-width: 1350px) {
+    
+    .frame
+    {
+        width: 65%;
+    }
+
+
+    .left-frame, .right-frame
+    {
+        transform: scale(0.9);
+    }
+
+
+}
+
+
+@media (max-width: 1350px) {
+    
+    .frame
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .left-frame, .right-frame
+    {
+        width: 100%;
+        height: 50%;
+    }
+
+    .right-frame
+    {
+
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+
+    .left-frame
+    {
+        font-size: 200px;
+        
+    }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+
+    .frame
+    {
+        width: 85%;
+    }
+
+    .left-frame
+    {
+        font-size: 150px;
+        
+    }
+
+}
+
+
+
+@media (max-width: 300px) {
+
+
+
+    .left-frame
+    {
+        font-size: 120px;
+        
+    }
+
+}

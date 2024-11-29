@@ -1,0 +1,106 @@
+.phone-header {
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-top: 0.5px solid black;
+}
+
+.logo {
+    transform: scale(1.2);
+    margin-bottom: 20px;
+}
+
+.phone-header-bottom {
+    font-size: 40px;
+    position: relative;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    padding: 10px 0;
+    z-index: 100;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-item {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+@media (min-width: 1000px) {
+    .phone-header {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu-item::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -3px;
+        width: 0;
+        height: 2px;
+        background-color: black;
+        transition: width 0.3s ease;
+        transform: translateX(-50%);
+    }
+
+    .menu-item.active::after {
+        width: 15%;
+    }
+
+    .button:hover {
+        background-color: blue;
+        color: white;
+        transform: scale(0.85);
+    }
+}
+
+@media (max-width: 550px) {
+    .logo {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 350px) {
+    .logo {
+        transform: scale(0.7);
+    }
+
+    .p {
+        font-size: 12px;
+    }
+
+    .phone-header {
+        flex-direction: column;
+    }
+
+    .oferta-button {
+        transform: scale(0.8);
+    }
+}

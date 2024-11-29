@@ -1,0 +1,94 @@
+.home-page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+
+.home-page-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 250px;
+    color: white;
+    font-size: 35px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+.home-page-title h1 {
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+.home-page-title h2 {
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+
+.home-page-title p {
+    margin: 30px;
+}
+
+.home-page-title button {
+    margin-top: 25px;
+}
+
+
+.oferta-button {
+    background: none;
+    border: 2px solid #FF0000;
+    color: #FF0000;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 22px;
+    border-radius: 14px;
+    font-weight: 5450;
+    height: 65px;
+}
+
+.oferta-button:hover {
+    background-color: #FF0000;
+    color: white;
+}
+
+.p
+{
+    text-align: center;
+}
+
+
+@media (max-width: 750px) {
+    .home-page-title {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .home-page-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .home-page-title {
+        font-size: 16px;
+    }
+}
+
+
+
